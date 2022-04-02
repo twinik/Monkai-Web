@@ -15,6 +15,7 @@ import Perks from "../components/Home/Perks";
 import Team from "../components/Home/Team";
 import Roadmap from "../components/Home/Roadmap";
 import Utilities from "../components/Home/Utilities";
+import Footer from "../components/Home/Footer";
 
 const Home: NextPage = () => {
   const [connected, setconnected] = React.useState(true);
@@ -24,19 +25,18 @@ const Home: NextPage = () => {
       {/* 
       {!connected && <NotConnectedMessage />}
       {connected && <HeroBanner />} */}
-
       <HeroBanner />
       <Heroes />
       <Light />
       {/* <Factions /> */}
       <Basics />
       <Utilities />
-
       <Slider />
       <Mint />
       <Perks />
       <Team />
       <Roadmap />
+      <Footer />
     </>
   );
 };
