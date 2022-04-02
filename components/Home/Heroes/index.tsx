@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Heroes() {
   return (
-    <div>
+    <div style={{ padding: "1rem" }}>
       <div
         data-w-id="b412ba31-d5c1-c41d-d986-e74b39f2c6ed"
         style={{
@@ -35,8 +35,8 @@ export default function Heroes() {
               <Image
                 src={yokai}
                 loading="lazy"
-                width={450}
-                height={600}
+                width={550}
+                height={700}
                 alt=""
                 className="heroes-image"
               />
