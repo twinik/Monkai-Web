@@ -987,6 +987,12 @@ button {
 	background-color: #fff;
 	color: #b94841;
 }
+.logo-second-rect {
+	width: 200%;
+	height: 200%;
+	background-color: inherit;
+	transform: translate(-45px, -18px);
+}
 .custom-button.white7 {
 	background-color: rgba(242, 243, 245, 0.07);
 	color: #f2f3f5;
@@ -7027,7 +7033,18 @@ input:checked + .slider:before {
 }
 
 .navbar {
-	background-color: #17161b;
+	background-color: transparent;
 	z-index: 100;
 	border-bottom: #b94841 solid;
+}
+
+.video-container {
+	width: 100%;
+	height: 85vh;
+	overflow-x: hidden;
+}
+
+.react-player {
+	position: absolute;
+	top: 0;
 }
