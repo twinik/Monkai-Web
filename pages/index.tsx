@@ -26,11 +26,12 @@ const Home: NextPage = () => {
       {connected && <HeroBanner />} */}
 
       <HeroBanner />
+      <Heroes />
       <Light />
       {/* <Factions /> */}
       <Basics />
       <Utilities />
-      <Heroes />
+
       <Slider />
       <Mint />
       <Perks />

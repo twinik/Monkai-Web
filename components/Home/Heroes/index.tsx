@@ -1,6 +1,6 @@
 import React from "react";
-import nemesis from "./../../../public/images/nemesis.png";
-import heroes from "./../../../public/images/heroes.png";
+import yokai from "./../../../public/images/yokai.png";
+import monkai from "./../../../public/images/monkai.png";
 import Image from "next/image";
 
 export default function Heroes() {
@@ -16,25 +16,26 @@ export default function Heroes() {
         }}
         className="heroes wf-section"
       >
-        <div className="container">
+        <div className="yokai-container">
           <div className="section-display left">
-            <div className="text-display dark">NEMESIS</div>
+            <div className="text-display dark">YOKAI</div>
           </div>
           <div className="flex-columns row w-row">
             <div className="column-9 w-col w-col-5">
-              <h3 className="nemesis-text mb-20">ネメシス</h3>
-              <h3 className="text-white mb-20">NEMESIS</h3>
-              <p className="text-white-opacity mb-40">
-                Each bloodline has a dark force that seeks its way to power. As
-                long as there is a concept of victors the vanquished will also
-                exist.{" "}
+              <h3 className="text-white mb-20">YOKAI</h3>
+              <h3 className="nemesis-text mb-20">妖怪</h3>
+              <p className="text-white mb-40">
+                The dignified yokai lineage has ruled dominant for centuries.
+                Holding their heads high and ruling their land with mythological
+                command. The egoism that followed has bred impending darkness
+                and corruption amongst their ranks.
               </p>
             </div>
             <div className="column-16 w-col w-col-7">
               <Image
-                src={nemesis}
+                src={yokai}
                 loading="lazy"
-                width={500}
+                width={450}
                 height={600}
                 alt=""
                 className="heroes-image"
@@ -54,26 +55,27 @@ export default function Heroes() {
         }}
         className="nemesis2 wf-section"
       >
-        <div className="container">
+        <div className="monkai-container">
           <div className="section-display left">
-            <div className="text-display-copy dark">HEROES</div>
+            <div className="text-display-copy dark">MONKAI</div>
           </div>
           <div className="flex-columns row flex-reverse w-row">
             <div className="column-10 w-col w-col-5">
-              <h3 className="hero-text mb-20">ヒーローズ</h3>
-              <h3 className="text-white mb-20">HEROES</h3>
-              <p className="text-white-opacity mb-40">
-                Honor, dignity, and loyalty mark the ways of a hero. All nations
-                have an opposing force to darkness. When awakened will impart
-                justice, peace, and equanimity.
+              <h3 className="text-white mb-20">MONKAI</h3>
+              <h3 className="hero-text mb-20">モンカイ</h3>
+              <p className="text-white mb-40">
+                Underestimated for millennials for their lethargic methods of
+                governance, the monkai has always been known for their passive
+                demeanours. However, don't let that fool you, their power is
+                concealed behind their apathetic smiles.
               </p>
             </div>
             <div className="column-17 w-col w-col-7">
               <Image
-                src={heroes}
+                src={monkai}
                 loading="lazy"
-                width={650}
-                height={650}
+                width={3264}
+                height={3284}
                 alt=""
                 className="heroes-image _2"
               />
