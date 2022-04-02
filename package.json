@@ -1,0 +1,76 @@
+{
+  "name": "azuki-clone",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@binance-chain/bsc-connector": "^1.0.0",
+    "@ethersproject/providers": "^5.1.2",
+    "@ethersproject/units": "^5.1.0",
+    "@solana/web3.js": "^1.32.0",
+    "@web3-react/abstract-connector": "latest",
+    "@web3-react/authereum-connector": "latest",
+    "@web3-react/core": "latest",
+    "@web3-react/fortmatic-connector": "latest",
+    "@web3-react/frame-connector": "latest",
+    "@web3-react/injected-connector": "latest",
+    "@web3-react/lattice-connector": "latest",
+    "@web3-react/ledger-connector": "latest",
+    "@web3-react/magic-connector": "latest",
+    "@web3-react/network-connector": "latest",
+    "@web3-react/portis-connector": "latest",
+    "@web3-react/torus-connector": "latest",
+    "@web3-react/trezor-connector": "latest",
+    "@web3-react/walletconnect-connector": "latest",
+    "@web3-react/walletlink-connector": "latest",
+    "axios": "^0.26.0",
+    "babel-plugin-styled-components": "^2.0.2",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-burger-menu": "^3.0.6",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^5.3.0",
+    "rxjs": "^7.5.2",
+    "sass": "^1.42.1",
+    "styled-components": "^5.3.1",
+    "swiper": "^8.0.7",
+    "web3": "^1.5.2",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@types/bs58": "^4.0.1",
+    "@types/node": "^17.0.23",
+    "@types/react": "17.0.22",
+    "@types/react-router-dom": "^5.3.0",
+    "@types/styled-components": "^5.1.14",
+    "autoprefixer": "^10.4.2",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.16",
+    "typescript": "4.4.3"
+  },
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ]
+  ]
+}
