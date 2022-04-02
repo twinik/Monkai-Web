@@ -27,7 +27,11 @@ function index() {
             >
               <FaTwitter color="#fff" className="social-icon" />
             </a>
-            <a href="https://discord.com">
+            <a
+              href="https://discord.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaDiscord color="#fff" className="social-icon" />
             </a>
           </div>
