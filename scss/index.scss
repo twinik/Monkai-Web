@@ -7091,3 +7091,69 @@ input:checked + .slider:before {
 		height: calc(100vw / 1.6);
 	}
 }
+
+.perks-container {
+	width: 80%;
+	margin: auto;
+	padding: auto 5%;
+	margin-bottom: 50px;
+}
+
+.perks-heading {
+	margin-top: 20px;
+	color: #f2f3f5;
+	text-align: center;
+	color: #b94841;
+	text-transform: uppercase;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	color: #b94841;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.perks-heading:before {
+	content: "特典";
+	position: absolute;
+	margin: auto;
+	z-index: -1;
+	font-size: 80px;
+	color: #2e2d32;
+	width: 35vw;
+}
+
+.perks-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	margin-top: 20px;
+	margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+	.perks-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.perks-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.perk {
+	border: 2px solid #b94841;
+	padding: 10px;
+	color: #ffffff;
+	background-color: #222123;
+}
+
+.perk-title {
+	font-size: 24px;
+}
+
+.perk-image {
+	margin-top: 5% !important;
+}
