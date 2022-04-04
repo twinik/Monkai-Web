@@ -7157,3 +7157,8 @@ input:checked + .slider:before {
 .perk-image {
 	margin-top: 5% !important;
 }
+
+.roadmap-tick::before {
+	content: "[✓] ";
+	color: #22c016;
+}
