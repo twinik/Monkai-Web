@@ -6920,7 +6920,8 @@ input:checked + .slider:before {
 	.utilities-container {
 		flex-direction: row;
 		padding: 0% 0px 3%;
-		width: 95%;
+		width: 70%;
+		grid-gap: 2rem;
 	}
 	.utilities-paragraph,
 	.utilities-list,
