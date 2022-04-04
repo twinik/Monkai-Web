@@ -15,6 +15,7 @@ import Perks from "../components/Home/Perks";
 import Team from "../components/Home/Team";
 import Roadmap from "../components/Home/Roadmap";
 import Utilities from "../components/Home/Utilities";
+import Footer from "../components/Home/Footer";
 import VideoBackground from "../components/Home/VideoBackground";
 
 const Home: NextPage = () => {
@@ -27,16 +28,16 @@ const Home: NextPage = () => {
       {connected && <HeroBanner />} */}
 			<VideoBackground />
 			{/* <HeroBanner /> */}
+			<Heroes />
 			<Light />
 			{/* <Factions /> */}
-			<Basics />
+			{/* <Basics /> */}
 			<Utilities />
-			<Heroes />
-			<Slider />
+			{/* <Slider /> */}
 			<Mint />
-			<Perks />
-			<Team />
 			<Roadmap />
+			{/* <Team /> */}
+			<Footer />
 		</>
 	);
 };
