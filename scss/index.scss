@@ -7221,32 +7221,9 @@ input:checked + .slider:before {
   align-items: center;
   counter-reset: contador;
   margin: 3rem auto;
-  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 0rem;
 }
-
-@media screen and (min-width: 768px) {
-  .container-roadMap {
-    width: 85%;
-  }
-}
-
-.container-roadmap-items {
-  counter-increment: contador;
-}
-
-/* @media screen and (min-width: 1024px) {
-  .container-roadMap {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container-roadMap {
-    margin-top: 4rem;
-
-  }
-} */
 
 /* ROADMAP ITEM */
 .container-item::before {
@@ -7287,7 +7264,7 @@ input:checked + .slider:before {
   width: 100%;
   border-radius: 5px;
   position: relative;
-  padding-left: 3rem;
+  padding-left: 1rem;
 }
 
 .container-content-item {
@@ -7326,19 +7303,50 @@ input:checked + .slider:before {
   margin-top: -13.5px;
   position: absolute;
   content: "";
-  left: -24px;
+  left: 8px;
   border-radius: 35%;
 }
 
 .container-content-header-time::after {
-  bottom: 6px;
   width: 11px;
   height: 11px;
+  bottom: 6px;
   margin-top: -2.5px;
+  left: -52px;
   position: absolute;
   content: "0" counter(contador);
-  left: -84px;
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .container-roadMap {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    counter-reset: contador;
+    margin: 3rem auto;
+    padding-left: 1.5rem;
+    padding-right: 0rem;
+  }
+
+  .container-item {
+    padding-left: 3rem;
+  }
+
+  .container-content-header-time::before {
+    left: -24px;
+  }
+
+  .container-content-header-time::after {
+    left: -84px;
+  }
+}
+
+.container-roadmap-items {
+  counter-increment: contador;
 }
 
 .container-content-header-title {
