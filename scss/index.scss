@@ -7478,7 +7478,7 @@ input:checked + .slider:before {
 	z-index: -1;
 	font-size: 80px;
 	color: #2e2d32;
-	left: 35vw;
+	left: 30vw;
 }
 
 .perks-grid {
@@ -7535,4 +7535,104 @@ input:checked + .slider:before {
 .roadmap-tick::before {
 	content: "[✓] ";
 	color: #22c016;
+}
+
+.roadmap-heading {
+	margin-top: 20px;
+	color: #f2f3f5;
+	text-align: center;
+	color: #b94841;
+	text-transform: uppercase;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	color: #b94841;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.roadmap-heading:before {
+	content: "地図";
+	position: absolute;
+	margin: auto;
+	z-index: -1;
+	font-size: 80px;
+	color: #2e2d32;
+	left: 28vw;
+}
+
+@media screen and (max-width: 1440px) {
+	.roadmap-heading::before {
+		left: 35vw;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.roadmap-heading::before {
+		left: 40vw;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.roadmap-heading::before {
+		left: 30vw;
+	}
+}
+
+.roadmap-subtitle {
+	padding: 10px 30px;
+	text-align: center;
+	background-color: #b94841;
+	width: fit-content;
+	margin: auto;
+	margin-top: 50px;
+	color: #eee;
+	font-size: 14px;
+	font-weight: 600px;
+}
+
+.dev-roadmap-cont {
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	min-width: 380px;
+	margin: 50px auto;
+	justify-content: space-between;
+}
+
+.dev-roadmap-left {
+	width: 100%;
+	padding: 20px;
+	border-right: 2px solid #b94841;
+	padding-bottom: 100px;
+}
+
+.dev-roadmap-right {
+	width: 100%;
+	padding: 20px;
+	border-left: 2px solid #b94841;
+	padding-bottom: 100px;
+}
+
+.dev-roadmap-mint-title {
+	color: #b94841;
+	text-transform: uppercase;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	color: #b94841;
+	font-size: 30px;
+	line-height: 40px;
+	border-bottom: #fff 1px solid;
+}
+
+.dev-roadmap-list {
+	list-style-type: "- ";
+	color: #ececec;
+}
+
+@media screen and (max-width: 768px) {
+	.dev-roadmap-cont {
+		width: 90%;
+	}
 }
