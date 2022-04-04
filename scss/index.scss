@@ -6744,11 +6744,9 @@ input:checked + .slider:before {
 }
 
 .utilities-card {
-	display: flex;
-	-webkit-box-align: center;
-	align-items: center;
 	flex-direction: row;
 	margin-bottom: 30px;
+	height: 100%;
 }
 .utilities-token-container {
 	display: flex;
@@ -6774,10 +6772,11 @@ input:checked + .slider:before {
 }
 .utilities-title {
 	font-weight: 600;
-	line-height: 1.33;
+	text-align: start;
+	font-size: 20px;
 	color: #f2f3f5;
-	font-size: 28px;
-	line-height: 1.4em;
+	border-left: solid 5px #b94841;
+	padding-left: 20px;
 }
 .utilities-text > :not(style) ~ :not(style) {
 	margin-top: 0.5rem;
@@ -6808,6 +6807,28 @@ input:checked + .slider:before {
 	line-height: 40px;
 }
 
+.utilities-heading:before {
+	content: "効用";
+	position: absolute;
+	margin: auto;
+	color: #eee;
+	z-index: -1;
+	font-size: 80px;
+	color: #2e2d32;
+}
+
+@media screen and (min-width: 500px) {
+	.utilities-heading:before {
+		line-height: 0.5;
+	}
+}
+.utilities-divider {
+	margin: auto;
+	height: 2px;
+	width: 100px;
+	background-color: #b94841;
+}
+
 .css-1ltmcts {
 	display: flex;
 	flex-direction: column;
@@ -6833,7 +6854,7 @@ input:checked + .slider:before {
 }
 
 .utilities-paragraph {
-	font-size: 18px;
+	font-size: 14px;
 	color: rgba(242, 243, 245, 0.6);
 	width: 80%;
 }
@@ -6842,15 +6863,28 @@ input:checked + .slider:before {
 	border-style: solid;
 	border-width: 6px;
 	border-color: #17161b;
-	background-color: #292a2e;
-	box-shadow: 0 0 0 1px rgb(242 243 245 / 7%);
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
 	justify-content: center;
 	align-items: center;
 	margin: 80px auto 0;
 	padding: 4%;
 	flex-direction: column;
 	width: 95%;
+	padding: 0 5vw;
+}
+
+@media screen and (max-width: 768px) {
+	.utilities-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.utilities-container {
+		grid-template-columns: 1fr;
+	}
 }
 
 .utilities-first,
@@ -6864,7 +6898,7 @@ input:checked + .slider:before {
 .utilties-list-item,
 .utilities-text {
 	width: 100%;
-	text-align: center;
+	text-align: start;
 }
 
 .utilities-card {
@@ -7040,11 +7074,20 @@ input:checked + .slider:before {
 
 .video-container {
 	width: 100%;
-	height: 85vh;
+	height: calc(100vw / 1.6 - 12rem);
 	overflow-x: hidden;
 }
 
 .react-player {
 	position: absolute;
 	top: 0;
+}
+
+@media screen and (max-width: 500px) {
+	.react-player {
+		position: relative;
+	}
+	.video-container {
+		height: calc(100vw / 1.6);
+	}
 }

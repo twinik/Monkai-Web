@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       {!connected && <NotConnectedMessage />}
       {connected && <HeroBanner />} */}
 			<VideoBackground />
-			<HeroBanner />
+			{/* <HeroBanner /> */}
 			<Light />
 			{/* <Factions /> */}
 			<Basics />
