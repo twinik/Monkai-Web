@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../assets/images/monkai-logo.jpg";
 
 export const Logo = () => {
 	return (
@@ -9,7 +11,13 @@ export const Logo = () => {
 				className="custom-button primary secondary w-inline-block cursor-pointer"
 				style={{ overflow: "visible" }}
 			>
-				<div className="custom-button-text-2">MONKAI</div>
+				<Image
+					src={logo}
+					height={40}
+					width={90}
+					className="custom-button-text-2"
+				/>
+				{/* <div className="custom-button-text-2">MONKAI</div> */}
 				<div className="logo-second-rect"></div>
 			</div>
 		</Link>

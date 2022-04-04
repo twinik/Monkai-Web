@@ -7,6 +7,10 @@ import book from "./../../../public/images/icons8-open-book-100.png";
 import Image from "next/image";
 import ethLogo from "../../../assets/images/ethereum_logo_icon_1711474 (1).png";
 import solanaLogo from "../../../assets/images/Solana_Logo_2021_Color (1).png";
+import breedingImg from "../../../assets/images/perks-breeding.jpg";
+import printsImg from "../../../assets/images/perks-prints.jpg";
+import rewardImg from "../../../assets/images/perks-rewards.jpg";
+import stakingImg from "../../../assets/images/perks-staking.jpg";
 
 export default function Perks() {
 	return (
@@ -14,6 +18,9 @@ export default function Perks() {
 			<h3 className="perks-heading">Multi-Chain Perks</h3>
 			<div className="perks-grid">
 				<div className="perk">
+					<div className="perk-icon">
+						<Image width={50} height={50} src={breedingImg} />
+					</div>
 					<h4 className="perk-title">Breeding</h4>
 					<p className="perk-text">
 						If you own two or more monkai nfts you can breed them to
@@ -22,6 +29,9 @@ export default function Perks() {
 					</p>
 				</div>
 				<div className="perk">
+					<div className="perk-icon">
+						<Image width={50} height={50} src={printsImg} />
+					</div>
 					<h4 className="perk-title">Prints</h4>
 					<p className="perk-text">
 						Monkai holders will receive prints of their individual
@@ -31,15 +41,19 @@ export default function Perks() {
 					</p>
 				</div>
 				<div className="perk">
-					<Image
-						height={150}
-						width={350}
-						src={solanaLogo}
-						objectFit="contain"
-						className="perk-image"
-					/>
+					<div className="perk-image">
+						<Image
+							height={150}
+							width={350}
+							src={solanaLogo}
+							objectFit="contain"
+						/>
+					</div>
 				</div>
 				<div className="perk">
+					<div className="perk-icon">
+						<Image width={50} height={50} src={rewardImg} />
+					</div>
 					<h4 className="perk-title">Reward holders</h4>
 					<p className="perk-text">
 						You guessed it! If holders own three or more Monkai nfts
@@ -48,6 +62,9 @@ export default function Perks() {
 					</p>
 				</div>
 				<div className="perk">
+					<div className="perk-icon">
+						<Image width={70} height={50} src={stakingImg} />
+					</div>
 					<h4 className="perk-title">Staking</h4>
 					<p className="perk-text">
 						Holders will be able to stake their Monkai Nfts to gain
@@ -55,13 +72,14 @@ export default function Perks() {
 					</p>
 				</div>
 				<div className="perk">
-					<Image
-						height={150}
-						width={350}
-						src={ethLogo}
-						objectFit="contain"
-						className="perk-image"
-					/>
+					<div className="perk-image">
+						<Image
+							height={150}
+							width={350}
+							src={ethLogo}
+							objectFit="contain"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
