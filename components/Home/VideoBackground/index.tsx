@@ -12,6 +12,7 @@ function Index() {
 				playing={true}
 				volume={0}
 				loop={true}
+				playsinline={true}
 			/>
 		</div>
 	);
