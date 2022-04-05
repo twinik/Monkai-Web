@@ -6,9 +6,7 @@ function Index() {
 		<div className="video-container">
 			<ReactPlayer
 				className="react-player"
-				url={
-					"https://drive.google.com/uc?export=download&id=1xijpxvKZsNjV6DTtzGlO22GlYj8tKZwj"
-				}
+				url={"/MONKAI_ANIM_2.mp4"}
 				width="100%"
 				height=""
 				playing={true}
