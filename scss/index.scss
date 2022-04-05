@@ -7452,6 +7452,12 @@ input:checked + .slider:before {
   overflow-x: hidden;
 }
 
+@media screen and (min-width: 500px) and (max-width: 990px) {
+  .video-container {
+    height: 50vh;
+  }
+}
+
 .react-player {
   position: absolute;
   top: 0;
