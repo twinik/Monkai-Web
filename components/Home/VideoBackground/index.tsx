@@ -13,6 +13,7 @@ function Index() {
 				volume={0}
 				loop={true}
 				playsinline={true}
+				muted={true}
 			/>
 		</div>
 	);
