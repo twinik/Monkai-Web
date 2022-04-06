@@ -15,6 +15,10 @@ function Index() {
 				playsinline={true}
 				muted={true}
 			/>
+			<div className="video-triangles">
+				<div className="video-triangle-left"></div>
+				<div className="video-triangle-right"></div>
+			</div>
 		</div>
 	);
 }
